@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | CJ Portfolio</title>
+<meta name="description" content="Interactive personal portfolio of Curt Juztine (CJ) Ebilane, Iba, Zambales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body data-page="home">
+<a class="visually-hidden-focusable" href="#main">Skip to content</a>
+<nav class="navbar navbar-expand-md border-bottom sticky-top bg-body" aria-label="Main navigation">
+<div class="container">
+<a class="navbar-brand logo" href="index.html" aria-label="CJ, home">CJ</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto align-items-md-center gap-md-2"><li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li><li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li><li class="nav-item"><a class="nav-link" href="pages/achievements.html">Achievements</a></li><li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+<li class="nav-item"><button id="themeToggle" class="btn btn-outline-accent btn-sm" type="button" aria-pressed="true"><i class="bi bi-sun" aria-hidden="true"></i><span class="visually-hidden">Switch between light and dark theme</span></button></li>
+</ul></div></div></nav>
+<main id="main" class="container py-5">
+<div class="row justify-content-center text-center"><div class="col-lg-8">
+<h1 class="display-5 fw-bold">Hi, I'm CJ.</h1>
+<p class="lead">I'm Curt Juztine Ebilane from Iba, Zambales. I speak with confidence, work well in a team, and spend my free time gaming, studying, sightseeing, and making things by hand.</p>
+<div class="d-flex flex-wrap justify-content-center gap-2"><a class="btn btn-accent" href="pages/about.html">Read about me</a><a class="btn btn-outline-accent" href="pages/achievements.html">See achievements</a><a class="btn btn-outline-accent" href="pages/contact.html">Send a message</a></div>
+</div></div>
+<section class="mt-5" aria-label="Photos of places I like to visit">
+<div id="heroCarousel" class="carousel slide hero-carousel mx-auto" data-bs-pause="false">
+<div class="carousel-inner"><div class="carousel-item active"><button type="button" class="slide-open p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#photoModal" data-caption="Potipot Gateway Sunset" aria-label="Enlarge photo: Potipot Gateway Sunset"><img src="assets/images/potipot-gateway-sunset.jpg" alt="Sunset at Potipot Gateway"></button><h2 class="h5 slide-caption">Potipot Gateway Sunset</h2></div><div class="carousel-item"><button type="button" class="slide-open p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#photoModal" data-caption="Baguio City CrossRoad" aria-label="Enlarge photo: Baguio City CrossRoad"><img src="assets/images/baguio-city-crossroad.jpg" alt="Baguio City CrossRoad street view"></button><h2 class="h5 slide-caption">Baguio City CrossRoad</h2></div><div class="carousel-item"><button type="button" class="slide-open p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#photoModal" data-caption="St. Michael's Church Sta Cruz" aria-label="Enlarge photo: St. Michael's Church Sta Cruz"><img src="assets/images/st-michaels-church-sta-cruz.jpg" alt="St. Michael's Church in Sta Cruz"></button><h2 class="h5 slide-caption">St. Michael's Church Sta Cruz</h2></div></div>
+<div class="carousel-indicators"><button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button><button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button><button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button></div>
+</div>
+</section>
+<div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="photoModalLabel">Photo</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+<div class="modal-body"><img id="modalImg" class="img-fluid rounded" src="" alt=""></div></div></div></div>
+<section class="row g-3 mt-4" aria-label="Site sections">
+<div class="col-md-4"><a class="card h-100 text-decoration-none text-reset" href="pages/about.html"><div class="card-body"><h2 class="h5">About me</h2><p class="mb-0">My story, strengths, skills, and the things I enjoy.</p></div></a></div>
+<div class="col-md-4"><a class="card h-100 text-decoration-none text-reset" href="pages/achievements.html"><div class="card-body"><h2 class="h5">Achievements</h2><p class="mb-0">Awards from tournaments, work, and school. Search and sort them.</p></div></a></div>
+<div class="col-md-4"><a class="card h-100 text-decoration-none text-reset" href="pages/contact.html"><div class="card-body"><h2 class="h5">Contact</h2><p class="mb-0">Send me a message or find me on social media.</p></div></a></div>
+</section>
+</main>
+<footer class="border-top py-4 text-center small">
+<p class="mb-0">&copy; 2026 Curt Juztine Ebilane. Iba, Zambales.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

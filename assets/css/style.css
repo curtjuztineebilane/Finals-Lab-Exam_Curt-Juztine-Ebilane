@@ -1,0 +1,36 @@
+/* CJ Portfolio styles: Bootstrap 5.3 theme variables + small custom rules */
+:root {
+  --bs-body-font-family: 'Playfair Display', Georgia, serif;
+  --bs-body-line-height: 1.7;
+  --accent: #8a5a00; --on-accent: #fff; --surface: #f6f1e7; --line: #d9cfba;
+}
+[data-bs-theme=dark] {
+  --bs-body-bg: #000; --bs-body-color: #f2f2f2; --bs-body-bg-rgb: 0,0,0;
+  --accent: #d4a84b; --on-accent: #000; --surface: #141414; --line: #333;
+}
+a { color: var(--accent); }
+main { overflow-wrap: break-word; }
+.text-accent { color: var(--accent); }
+.logo { font-weight: 700; font-size: 1.6rem; letter-spacing: .15em; color: var(--accent) !important; }
+.nav-link.active { color: var(--accent) !important; border-bottom: 2px solid var(--accent); }
+[data-bs-theme=dark] .navbar-toggler-icon { filter: invert(1); }
+:focus-visible, .form-control:focus, .form-select:focus { outline: 3px solid var(--accent) !important; outline-offset: 2px; box-shadow: none !important; }
+.btn-accent, .btn-outline-accent {
+  --bs-btn-color: var(--on-accent); --bs-btn-bg: var(--accent); --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-color: var(--on-accent); --bs-btn-hover-bg: var(--accent); --bs-btn-hover-border-color: var(--accent);
+  --bs-btn-active-color: var(--on-accent); --bs-btn-active-bg: var(--accent); --bs-btn-active-border-color: var(--accent);
+}
+.btn-accent:hover { filter: brightness(1.15); }
+.btn-outline-accent { --bs-btn-color: var(--accent); --bs-btn-bg: transparent; }
+.card, .list-group-item { --bs-card-bg: var(--surface); --bs-card-border-color: var(--line); --bs-list-group-bg: var(--surface); --bs-list-group-border-color: var(--line); }
+.badge-skill { background: var(--surface); color: var(--bs-body-color); border: 1px solid var(--accent); font-weight: 400; font-size: 1rem; }
+.gallery-item { display: block; cursor: zoom-in; border-radius: .5rem; overflow: hidden; }
+.gallery-item img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+/* Home carousel: centered; photo, caption and dots stack */
+.hero-carousel { max-width: 760px; }
+.hero-carousel .slide-open { display: block; cursor: zoom-in; }
+.hero-carousel .carousel-item img { display: block; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; width: 100%; border-radius: .5rem; }
+.hero-carousel .slide-caption { margin: .75rem 0 0; text-align: center; }
+.hero-carousel .carousel-indicators { position: static; margin: .5rem 0 0; }
+.hero-carousel .carousel-indicators [data-bs-target] { background-color: var(--accent); }

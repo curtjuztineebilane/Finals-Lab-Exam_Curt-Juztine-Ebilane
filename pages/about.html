@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | CJ Portfolio</title>
+<meta name="description" content="Interactive personal portfolio of Curt Juztine (CJ) Ebilane, Iba, Zambales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body data-page="about">
+<a class="visually-hidden-focusable" href="#main">Skip to content</a>
+<nav class="navbar navbar-expand-md border-bottom sticky-top bg-body" aria-label="Main navigation">
+<div class="container">
+<a class="navbar-brand logo" href="../index.html" aria-label="CJ, home">CJ</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto align-items-md-center gap-md-2"><li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li><li class="nav-item"><a class="nav-link active" href="about.html" aria-current="page">About</a></li><li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item"><button id="themeToggle" class="btn btn-outline-accent btn-sm" type="button" aria-pressed="true"><i class="bi bi-sun" aria-hidden="true"></i><span class="visually-hidden">Switch between light and dark theme</span></button></li>
+</ul></div></div></nav>
+<main id="main" class="container py-5">
+<h1 class="mb-4">About me</h1>
+<div class="row g-4 mb-5">
+<div class="col-lg-6"><p>Hello! I'm Curt Juztine Ebilane, but everyone calls me CJ. I live in Iba, Zambales. I like learning how things work, whether that's a thesis topic, a new game strategy, or a woodworking project.</p><p>[Replace this paragraph with a short story about you: where you study, what you want to do after graduation.]</p></div>
+<div class="col-lg-3"><h2 class="h5">Strengths</h2><ul class="list-group"><li class="list-group-item"><i class="bi bi-check-circle text-accent me-2" aria-hidden="true"></i>Confident communicator</li><li class="list-group-item"><i class="bi bi-check-circle text-accent me-2" aria-hidden="true"></i>Disciplined and patient</li><li class="list-group-item"><i class="bi bi-check-circle text-accent me-2" aria-hidden="true"></i>Quick thinker who works well in a team</li></ul></div>
+<div class="col-lg-3"><h2 class="h5">Skills</h2><div class="d-flex flex-wrap gap-2"><span class="badge badge-skill">Public speaking</span><span class="badge badge-skill">Gaming</span><span class="badge badge-skill">Research</span><span class="badge badge-skill">Playing instruments</span></div></div>
+</div>
+<h2 class="h4">What I enjoy</h2>
+<div id="galleryFilters" class="d-flex flex-wrap gap-2 mb-3" role="group" aria-label="Filter photos by interest"><button type="button" class="btn btn-outline-accent active" data-filter="all" aria-pressed="true">All</button><button type="button" class="btn btn-outline-accent" data-filter="gaming" aria-pressed="false">Gaming</button><button type="button" class="btn btn-outline-accent" data-filter="studying" aria-pressed="false">Studying</button><button type="button" class="btn btn-outline-accent" data-filter="sightseeing" aria-pressed="false">Sightseeing</button><button type="button" class="btn btn-outline-accent" data-filter="handiwork" aria-pressed="false">Handiwork</button><button type="button" class="btn btn-outline-accent" data-filter="photography" aria-pressed="false">Photography</button><button type="button" class="btn btn-outline-accent" data-filter="music" aria-pressed="false">Music</button></div>
+<div class="row g-3"><div class="col-6 col-md-3 gallery-col" data-category="gaming"><button type="button" class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#photoModal" data-caption="Mobile Legends profile screen"><img src="../assets/images/gaming-mlbb-tournament.jpg" alt="Mobile Legends profile screen"></button></div><div class="col-6 col-md-3 gallery-col" data-category="gaming"><button type="button" class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#photoModal" data-caption="Game screen from a gaming session"><img src="../assets/images/gaming-setup.jpg" alt="Game screen from a gaming session"></button></div><div class="col-6 col-md-3 gallery-col" data-category="studying"><button type="button" class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#photoModal" data-caption="Laptop on my study desk"><img src="../assets/images/studying-desk.jpg" alt="Laptop on my study desk"></button></div><div class="col-6 col-md-3 gallery-col" data-category="studying"><button type="button" class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#photoModal" data-caption="Coding on my laptop for school"><img src="../assets/images/studying-thesis.jpg" alt="Coding on my laptop for school"></button></div><div class="col-6 col-md-3 gallery-col" data-category="sightseeing"><button type="button" class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#photoModal" data-caption="Standing on a hilltop with green mountains behind me"><img src="../assets/images/sightseeing-city-trip.jpg" alt="Standing on a hilltop with green mountains behind me"></button></div><div class="col-6 col-md-3 gallery-col" data-category="handiwork"><button type="button" class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#photoModal" data-caption="Working on a woodwork project"><img src="../assets/images/handiwork-woodwork.jpg" alt="Working on a woodwork project"></button></div><div class="col-6 col-md-3 gallery-col" data-category="photography"><button type="button" class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#photoModal" data-caption="Camera screen showing a photo I took"><img src="../assets/images/photography-hobby.jpg" alt="Camera screen showing a photo I took"></button></div><div class="col-6 col-md-3 gallery-col" data-category="music"><button type="button" class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#photoModal" data-caption="Playing guitar with a band on stage"><img src="../assets/images/playing-music.jpg" alt="Playing guitar with a band on stage"></button></div></div>
+<div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="photoModalLabel">Photo</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+<div class="modal-body"><img id="modalImg" class="img-fluid rounded" src="" alt=""></div></div></div></div>
+</main>
+<footer class="border-top py-4 text-center small">
+<p class="mb-0">&copy; 2026 Curt Juztine Ebilane. Iba, Zambales.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
