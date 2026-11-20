@@ -1,3 +1,4 @@
 # CJ Personal Portfolio
 
-(README to be completed.)
+This project is for my exam
+
